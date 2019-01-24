@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div class="header-detail">
+    <div v-show="visible" class="header-detail">
       <div class="detail-wrapper clear-fix">
         <div class="detail-main">
           <h1 class="name">{{seller.name}}</h1>
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div class="detail-close">
+      <div class="detail-close" @click="hide">
         <i class="icon-close"></i>
       </div>
     </div>
@@ -48,9 +48,22 @@ export default {
       }
     }
   },
+  data () {
+    return {
+      visible: false
+    }
+  },
   components: {
     SupportIco,
     Star
+  },
+  methods: {
+    show () {
+      this.visible = true
+    },
+    hide () {
+      this.visible = false
+    }
   }
 }
 </script>
