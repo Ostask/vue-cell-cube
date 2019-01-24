@@ -38,7 +38,7 @@ export default {
     &.discount{
       bg-image('discount_1')
     }
-    &.gurantee{
+    &.guarantee{
       bg-image('guarantee_1')
     }
     &.invoice{
@@ -58,7 +58,7 @@ export default {
     &.discount{
       bg-image('discount_2')
     }
-    &.gurantee{
+    &.guarantee{
       bg-image('guarantee_2')
     }
     &.invoice{
@@ -78,7 +78,7 @@ export default {
     &.discount{
       bg-image('discount_3')
     }
-    &.gurantee{
+    &.guarantee{
       bg-image('guarantee_3')
     }
     &.invoice{
@@ -98,7 +98,7 @@ export default {
     &.discount{
       bg-image('discount_4')
     }
-    &.gurantee{
+    &.guarantee{
       bg-image('guarantee_4')
     }
     &.invoice{
