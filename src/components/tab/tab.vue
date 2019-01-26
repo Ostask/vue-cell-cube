@@ -10,6 +10,8 @@
     <div class="slide-wrapper">
       <cube-slide
         ref="slide"
+        @change="onChange"
+        @scroll="onScroll"
         :showDots="false"
         :loop="false"
         :autoPlay="false"
@@ -61,6 +63,14 @@ export default {
           return newVal === value.label
         })
       }
+    }
+  },
+  methods: {
+    onChange (current) {
+      this.index = current
+    },
+    onScroll (data) {
+      console.log(data)
     }
   }
 }
